@@ -4,7 +4,7 @@ body {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
   display: grid;
-  place-content: center;
+  align-items: center;
   background: linear-gradient(
     322deg,
     rgba(43, 46, 39, 1) 29%,
@@ -19,6 +19,12 @@ body {
   );
 
   color: white;
+}
+
+.container {
+  width: 40%;
+  height: 50vh;
+  margin-left: 4em;
 }
 
 h1 {
