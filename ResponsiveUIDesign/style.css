@@ -1,0 +1,50 @@
+:root {
+  --pinkish: #c500ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.wrapper {
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+a.logo {
+  color: var(--pinkish);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  margin-top: 1em;
+}
+
+nav li {
+  margin-right: 0.5em;
+}
+
+nav li a {
+  color: black;
+  font-weight: 700;
+  padding: 0.3em 0.7em;
+  background-color: #e6e6e6;
+  border-radius: 1em;
+}
