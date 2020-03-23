@@ -101,3 +101,18 @@ footer {
 blockquote p {
   line-height: 1.4em;
 }
+
+@media (min-width: 390px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    margin-top: 0.2em;
+  }
+
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+}
