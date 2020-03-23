@@ -48,3 +48,28 @@ nav li a {
   background-color: #e6e6e6;
   border-radius: 1em;
 }
+
+.hero-left {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  width: 80%;
+  margin: 1.5em auto 0;
+}
+
+.hero-left p {
+  font-size: 1.2rem;
+  margin: 1em auto;
+}
+
+a.cta-btn {
+  color: white;
+  background: var(--pinkish);
+  padding: 0.8em 1.5em;
+  border-radius: 2em;
+  font-weight: 700;
+  margin: 1em 0 3em;
+  display: inline-block;
+}
