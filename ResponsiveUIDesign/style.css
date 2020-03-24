@@ -116,3 +116,23 @@ blockquote p {
     margin-right: 0;
   }
 }
+
+@media (min-width: 600px) {
+  img {
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+
+  ul.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1.1em;
+  }
+  ul.testimonials li {
+    margin: 0;
+  }
+
+  ul.testimonials li:last-child {
+    grid-area: 2 / 1 / 2 / 3;
+  }
+}
