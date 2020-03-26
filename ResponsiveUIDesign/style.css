@@ -136,3 +136,45 @@ blockquote p {
     grid-area: 2 / 1 / 2 / 3;
   }
 }
+
+@media (min-width: 850px) {
+  .wrapper {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hero-left {
+    text-align: left;
+    width: 30%;
+    margin-left: 4em;
+  }
+
+  h1,
+  .hero-left p {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  img {
+    top: 0;
+    right: 0;
+    width: 50%;
+    clip-path: none;
+  }
+
+  nav ul li a {
+    background: none;
+  }
+
+  ul.testimonials {
+    display: flex;
+  }
+
+  ul.testimonials li {
+    margin-right: 1em;
+  }
+}
