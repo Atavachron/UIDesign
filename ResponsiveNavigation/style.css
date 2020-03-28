@@ -1,4 +1,78 @@
+:root {
+  --desaturated: #3d5262;
+  --bright: #008af8;
+  --dark: #1d2226;
+  --light: #7b8994;
+  --hover: #2e363d;
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--desaturated);
+  overflow: hidden;
+  align-items: center;
+}
+
+nav {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 66%;
+  height: 100vh;
+  background-color: var(--dark);
+}
+
+i {
+  color: white;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0.5em;
+}
+
+.exit {
+  font-size: 2em;
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.open {
+  cursor: pointer;
+  margin: 0.5em;
+  font-size: 2em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 4em;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--light);
+  display: block;
+  padding: 0.5em 1em;
+}
+
+.active a {
+  color: var(--bright);
+  font-weight: bold;
+}
+
+li a:hover {
+  background: var(--hover);
 }
