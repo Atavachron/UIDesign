@@ -29,6 +29,9 @@ nav {
   width: 66%;
   height: 100vh;
   background-color: var(--dark);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s;
 }
 
 i {
@@ -79,6 +82,8 @@ li a:hover {
 
 .open-nav {
   visibility: unset;
+  opacity: 1;
+  transform: translateX(0%);
 }
 
 @media (min-width: 500px) {
@@ -92,6 +97,8 @@ li a:hover {
     background: none;
     position: unset;
     height: auto;
+    transform: translate(0%);
+    opacity: 1;
   }
 
   nav ul {
