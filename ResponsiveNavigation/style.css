@@ -76,3 +76,36 @@ li a {
 li a:hover {
   background: var(--hover);
 }
+
+.open-nav {
+  visibility: unset;
+}
+
+@media (min-width: 500px) {
+  .open,
+  .exit {
+    display: none;
+  }
+
+  nav {
+    visibility: unset;
+    background: none;
+    position: unset;
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+    margin: auto;
+    width: auto;
+    float: right;
+  }
+
+  li a {
+    color: #addbff;
+  }
+
+  .active a {
+    color: white;
+  }
+}

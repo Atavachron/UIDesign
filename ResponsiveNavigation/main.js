@@ -7,9 +7,9 @@ open.addEventListener("click", openNav);
 exit.addEventListener("click", closeNav);
 
 function closeNav() {
-  nav.style.visibility = "hidden";
+  nav.classList.remove("open-nav");
 }
 
 function openNav() {
-  nav.style.visibility = "visible";
+  nav.classList.add("open-nav");
 }
