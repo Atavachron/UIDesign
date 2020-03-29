@@ -86,6 +86,10 @@ li a:hover {
   transform: translateX(0%);
 }
 
+.large {
+  transition: all 0s;
+}
+
 @media (min-width: 500px) {
   .open,
   .exit {
