@@ -69,6 +69,9 @@ li a {
   color: var(--light);
   display: block;
   padding: 0.5em 1em;
+  font-weight: bold;
+  background-color: #282e33;
+  margin-bottom: 2px;
 }
 
 .active a {
@@ -88,6 +91,30 @@ li a:hover {
 
 .large {
   transition: all 0s;
+}
+
+.submenu {
+  padding: 0 1em;
+}
+
+.submenu ul {
+  margin: 1em 0 1em;
+}
+
+.submenu a {
+  font-weight: normal;
+  color: var(--light);
+  background: none;
+}
+
+.submenu a:hover {
+  background: none;
+}
+
+.submenu p {
+  margin: 1em 0 1em 1em;
+  color: #707d88;
+  line-height: 1.4em;
 }
 
 @media (min-width: 500px) {
@@ -114,9 +141,54 @@ li a:hover {
 
   li a {
     color: #addbff;
+    background: none;
+    margin-bottom: 0;
   }
 
   .active a {
     color: white;
+  }
+
+  /* Drop Down Menu CSS */
+
+  header {
+    overflow: visible;
+  }
+
+  .sub {
+    position: relative;
+  }
+
+  .submenu {
+    display: none;
+  }
+
+  .sub:hover .submenu {
+    display: flex;
+    position: absolute;
+    top: 3.3em;
+    right: 0;
+    background: white;
+    padding: 1em 2em;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.07);
+  }
+
+  .submenu ul {
+    display: block;
+    margin: 1.5em 0 0;
+  }
+
+  .submenu li a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--dark);
+    font-size: 0.7rem;
+    padding: 0 0 0.5em 0;
+  }
+
+  .submenu p {
+    min-width: 12em;
+    padding-left: 1em;
+    border-left: 1px solid grey;
   }
 }
