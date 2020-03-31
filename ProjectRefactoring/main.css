@@ -169,6 +169,10 @@ nav ul li a {
   padding: 0.8em 1em;
 }
 
+nav ul li a:hover {
+  background-color: #39445f;
+}
+
 h3 {
   font-size: unset;
 }
@@ -186,6 +190,10 @@ nav {
   margin-bottom: 2em;
 }
 
+.large {
+  transition: all 0s;
+}
+
 @media (min-width: 420px) {
   body {
     padding: 1em;
@@ -200,7 +208,7 @@ nav {
   }
 }
 
-@media (min-width: 550px) {
+@media (min-width: 540px) {
   ul.data {
     justify-content: center;
   }
@@ -209,5 +217,66 @@ nav {
   }
   .panel ul.data li p {
     margin-bottom: 0;
+  }
+  nav {
+    width: 40%;
+  }
+}
+
+@media (min-width: 720px) {
+  body {
+    padding: 1.5em;
+  }
+  .columns {
+    display: flex;
+  }
+  .col {
+    flex: 0 0 48%;
+  }
+  ul.secondary {
+    margin-left: 3em;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 850px) {
+  svg {
+    display: none;
+  }
+
+  body {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 70px auto;
+    grid-template-areas:
+      "sidebar header"
+      "sidebar main";
+  }
+
+  nav {
+    visibility: unset;
+    position: unset;
+    opacity: 1;
+    transform: translateX(0);
+    width: 100%;
+    grid-area: sidebar;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  header,
+  main {
+    padding: 1.5em;
+  }
+
+  a.logo {
+    margin: 0;
   }
 }

@@ -13,3 +13,12 @@ open.addEventListener("click", () => {
 exit.addEventListener("click", () => {
   nav.classList.remove("open-nav");
 });
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 850 && !nav.classList.contains("large")) {
+    nav.classList.add("large");
+  }
+  if (window.innerWidth < 850 && nav.classList.contains("large")) {
+    nav.classList.remove("large");
+  }
+});
