@@ -155,3 +155,49 @@ p {
   opacity: 0.1;
   z-index: -1;
 }
+
+@media (min-width: 500px) {
+  body {
+    font-size: 18px;
+  }
+
+  .menu,
+  .exit {
+    display: none;
+  }
+
+  nav ul {
+    position: unset;
+    display: flex;
+    background: none;
+    height: unset;
+    text-transform: uppercase;
+  }
+
+  ul li a {
+    font-size: 0.9rem;
+    margin-left: unset;
+    padding: 0 0.5em;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta {
+    padding: 0.7em 1.2em;
+  }
+
+  .outline {
+    margin-left: 1em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
