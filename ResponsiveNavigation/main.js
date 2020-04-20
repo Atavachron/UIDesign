@@ -14,11 +14,11 @@ function openNav() {
   nav.classList.add("open-nav");
 }
 
-window.addEventListener("resize", () => {
-  if (window.innerWidth >= 500 && !nav.classList.contains("large")) {
-    nav.classList.add("large");
-  }
-  if (window.innerWidth < 500 && nav.classList.contains("large")) {
-    nav.classList.remove("large");
-  }
-});
+// window.addEventListener("resize", () => {
+//   if (window.innerWidth >= 500 && !nav.classList.contains("large")) {
+//     nav.classList.add("large");
+//   }
+//   if (window.innerWidth < 500 && nav.classList.contains("large")) {
+//     nav.classList.remove("large");
+//   }
+// });

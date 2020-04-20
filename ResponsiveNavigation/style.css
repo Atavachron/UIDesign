@@ -26,7 +26,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  width: 66%;
+  width: 0%;
   height: 100vh;
   background-color: var(--dark);
   transform: translateX(100%);
@@ -87,6 +87,7 @@ li a:hover {
   visibility: unset;
   opacity: 1;
   transform: translateX(0%);
+  width: 66%;
 }
 
 .large {
