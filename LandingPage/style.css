@@ -201,3 +201,42 @@ p {
     font-size: 1em;
   }
 }
+
+@media (min-width: 850px) {
+  body {
+    background: white;
+  }
+
+  .col-left {
+    width: 60%;
+    background: var(--light-green);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+  }
+
+  main {
+    text-align: left;
+    width: 90%;
+    margin-left: 2em;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .btn-container {
+    justify-content: left;
+  }
+
+  h1:before {
+    width: 10%;
+    left: 0;
+  }
+  .content-wrapper {
+    display: flex;
+  }
+
+  /* To Fix the Plant Image */
+}
