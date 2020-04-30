@@ -71,3 +71,42 @@ nav ul li a {
   top: 0;
   right: 0;
 }
+
+.open-nav {
+  visibility: unset;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.forest-hero {
+  background: url("images/forest.jpg");
+  color: white;
+  background-size: cover;
+}
+
+.wrapper {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.subtitle {
+  padding: 3em 0 0.5em;
+}
+
+h1 span {
+  display: block;
+  /* clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); */
+}
+
+.cta {
+  background: #72a84a;
+  color: white;
+  padding: 1em;
+  display: inline-block;
+  margin: 1em 0 3em;
+  font-weight: bold;
+}
