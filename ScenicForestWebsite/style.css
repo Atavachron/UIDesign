@@ -127,7 +127,7 @@ ul.featured-cabins li {
 
 .cabin-desc {
   font-size: 0.8em;
-  line-height: 1.8em;
+  line-height: 1.9sem;
   margin-bottom: 2em;
 }
 
@@ -154,4 +154,29 @@ ul.featured-cabins li {
 
 .cabin-cta img {
   width: 10px;
+}
+
+.feature-container {
+  background: #1a1a1a;
+  color: white;
+}
+
+.features {
+  width: 70%;
+  margin: 3em auto;
+}
+
+.features img {
+  width: 40px;
+}
+
+.features li {
+  margin-bottom: 3em;
+}
+
+.features p {
+  line-height: 1.9;
+  font-size: 0.8em;
+  margin-bottom: 2em;
+  color: #cccccc;
 }
